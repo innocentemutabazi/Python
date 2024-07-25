@@ -17,3 +17,13 @@ fruit_basket = ['apple', 'banana', 'cherry']
 add_fruit(fruit_basket)
 
 print(fruit_basket)  # Output: ['apple', 'banana', 'cherry', 'grape']
+
+def remove_item(shopping_list, item):
+    """Removes all occurrences of 'item' from the shopping list."""
+    while item in shopping_list:
+        shopping_list.remove(item)
+
+groceries = ['milk', 'bread', 'milk', 'eggs', 'milk']
+remove_item(groceries, 'milk')
+
+print(groceries)  # Output: ['bread', 'eggs']
